@@ -217,3 +217,38 @@ Features: Post and manage reviews for properties.
 7. Database Optimizations
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
+
+# 🔐 API Security
+Securing backend APIs is a critical component of any modern web application. Our project adopts a multi-layered security approach to protect user data, ensure proper access control, and guard against malicious activity. Below are the key security measures implemented:
+
+## Key Security Measures
+## Authentication
+We implement secure authentication (e.g., JWT, OAuth 2.0) to verify the identity of users before granting access to any protected resource. This ensures only legitimate users can interact with the API.
+
+## Authorization
+Role-based access control (RBAC) is used to restrict what authenticated users can do. For example, admins have broader access than regular users. This prevents unauthorized actions.
+
+## Rate Limiting & Throttling
+APIs are protected against abuse (e.g., brute-force attacks or spam) by limiting the number of requests a user can make over a period of time. Tools like Redis and middleware (e.g., express-rate-limit) help enforce this.
+
+## Input Validation & Sanitization
+All incoming data is validated and sanitized to prevent injection attacks such as SQL injection or XSS. Libraries like Joi or express-validator are used.
+
+## HTTPS Enforcement
+All traffic is encrypted using HTTPS to protect sensitive data in transit.
+
+## CORS Policy
+Strict CORS (Cross-Origin Resource Sharing) rules are applied to control which domains can interact with the API.
+
+# Why API Security Is Crucial
+##Protecting User Data
+User credentials, personal information, and session data must be kept safe from unauthorized access and breaches.
+
+##Securing Payments & Transactions
+For applications involving financial transactions, robust security is vital to prevent fraud and financial loss.
+
+## Maintaining Service Integrity
+Preventing abuse or malicious use helps keep the service reliable and performant for all users.
+
+## Compliance with Legal Standards
+Ensuring proper API security helps meet data protection regulations such as GDPR, HIPAA, or PCI DSS.

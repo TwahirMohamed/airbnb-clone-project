@@ -92,3 +92,97 @@ Designs wireframes, user flows, and high-fidelity visuals to enhance usability a
 
 ## CI/CD Pipelines: 
 * Automated pipelines for testing and deploying code changes.
+
+# Database Design
+This section outlines the key entities and their relationships within the system. The design ensures scalability, data integrity, and supports core functionalities such as user interaction, property listing, and booking management.
+
+## 🧑 Users
+* id (Primary Key)
+
+* name
+
+* email
+
+* password_hash
+
+* role (e.g., host, guest)
+
+## Relationships:
+
+* A user can list multiple properties.
+
+* A user can make multiple bookings.
+
+* A user can write multiple reviews.
+
+##🏠 Properties
+* id (Primary Key)
+
+* title
+
+* description
+
+* location
+
+* owner_id (Foreign Key → Users)
+
+## Relationships:
+
+* A property belongs to a user (owner).
+
+* A property can have multiple bookings.
+
+* A property can have multiple reviews.
+
+## 📅 Bookings
+* id (Primary Key)
+
+* user_id (Foreign Key → Users)
+
+* property_id (Foreign Key → Properties)
+
+* start_date
+
+* end_date
+
+## Relationships:
+
+* A booking is created by a user.
+
+* A booking is associated with one property.
+
+## ⭐ Reviews
+* id (Primary Key)
+
+* user_id (Foreign Key → Users)
+
+* property_id (Foreign Key → Properties)
+
+* rating
+
+* comment
+
+## Relationships:
+
+* A review is written by a user.
+
+* A review is associated with a specific property.
+
+## 💳 Payments
+* id (Primary Key)
+
+* user_id (Foreign Key → Users)
+
+* booking_id (Foreign Key → Bookings)
+
+* amount
+
+* payment_status
+
+## Relationships:
+
+* A payment is made by a user.
+
+* A payment is linked to a specific booking.
+
+This structure promotes a clear separation of concerns and supports future enhancements like admin roles, payment gateways, or advanced review analytics.

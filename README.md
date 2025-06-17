@@ -252,3 +252,33 @@ Preventing abuse or malicious use helps keep the service reliable and performant
 
 ## Compliance with Legal Standards
 Ensuring proper API security helps meet data protection regulations such as GDPR, HIPAA, or PCI DSS.
+
+# ⚙️ CI/CD Pipeline
+Continuous Integration (CI) and Continuous Deployment/Delivery (CD) pipelines are essential for automating and streamlining the software development lifecycle.
+
+## What is CI/CD?
+* Continuous Integration (CI) is the practice of frequently integrating code changes into a shared repository. Each change is automatically tested and verified to catch issues early.
+
+* Continuous Deployment/Delivery (CD) automates the process of deploying applications to staging or production environments after passing tests and validations.
+
+## Why CI/CD Is Important
+* Faster Development Cycles
+Automates repetitive tasks, allowing teams to release new features and fixes more frequently.
+
+* Improved Code Quality
+Automated testing ensures each commit meets quality standards before it’s merged or deployed.
+
+* Reduced Manual Errors
+Automation minimizes the risk of human error in build and deployment processes.
+
+* Rapid Feedback
+Developers get immediate feedback on their changes, making debugging and iteration quicker.
+
+## Tools Used
+1. GitHub Actions – Automates CI workflows, such as running tests on every pull request or deploying on merge.
+
+2. Docker – Containerizes the application, ensuring consistency across development, testing, and production environments.
+
+3. Docker Hub / GitHub Container Registry – Hosts and manages Docker images.
+
+4. AWS / Heroku / Vercel – Platforms that can be used for automated deployments.

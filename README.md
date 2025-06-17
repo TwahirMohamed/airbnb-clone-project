@@ -42,3 +42,28 @@ CI/CD Pipeline Integration:
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
 This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
+
+# 🧑‍💻 Team Roles
+Below are the key roles involved in this project, inspired by standard software team structures and resources like the ITRexGroup blog:
+
+## 🔧 Backend Developer
+Responsible for implementing the server-side logic, APIs, and core application functionality. Ensures secure, scalable, and efficient data processing and integration with databases and front-end systems.
+
+## 🗄️ Database Administrator (DBA)
+Manages the design, implementation, security, and performance tuning of the database systems. Ensures data integrity, availability, and optimal queries for application use.
+
+## 🎨 Frontend Developer
+Builds the client-side of the application, focusing on responsive design, user experience (UX), and integrating API responses into the interface using frameworks like React or Vue.
+
+## 🧪 QA Engineer (Tester)
+Creates and executes test cases to validate functionality, performance, and reliability. Ensures bugs are caught early and quality standards are maintained through automated and manual testing.
+
+## 📈 Project Manager
+Coordinates the overall project timeline, task assignments, and communication among team members. Tracks progress, mitigates risks, and ensures timely delivery of milestones.
+
+## 🔐 DevOps Engineer
+Automates deployment pipelines, monitors infrastructure, and ensures the availability and scalability of the system. Also manages CI/CD workflows and cloud configurations.
+
+## 🧠 UX/UI Designer
+Designs wireframes, user flows, and high-fidelity visuals to enhance usability and accessibility of the application, working closely with both users and developers.
+
